@@ -1,0 +1,282 @@
+.hero{
+    background-image: url(../img/other/hero_1.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    box-shadow: 0px 0px 0px 1000px rgb(0, 0, 0, 0.7) inset;
+}
+
+.personal *{
+    line-height: 1.5;
+}
+
+.personal{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.personal h2, .personal h3{
+    color: #003b65;
+}
+
+.personal .wrapper{
+    display: flex;
+}
+
+.personal .wrapper .left{
+    flex: 7
+}
+
+.personal .wrapper .left span{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.personal .wrapper .right{
+    flex: 3;
+    padding: 5px 20px;
+    background: #003b65;
+    border-radius: 3px;
+}
+
+.personal .wrapper .right.sec{
+    background: transparent;
+    padding: 10px;
+}
+
+.personal .wrapper .right img{
+    width: 100%;
+}
+
+.personal .wrapper .right *{
+    color: white;
+}
+
+.personal .wrapper .right li{
+    line-height: 2
+}
+
+.personal .below{
+    max-width: 700px;
+}
+
+.personal .below li{
+    padding: 0px 10px;
+    list-style: none;
+    font-size: .9em;
+    line-height: 1.5;
+}
+
+.personal .below span{
+    font-weight: bold;
+    padding: 0px;
+    display: block;
+    font-size: .9em;
+    margin: 10px 0px;
+}
+
+.personal .below h3{
+    font-size: 1.3em;
+}
+
+.personal .below a{
+    background: #003b65;
+    color: white;
+    padding: 10px;
+    display: block;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.personal .below a:hover{
+    color: white;
+}
+
+.personal .below div {display: none;}
+.personal .below div:first-of-type {display: block;}
+
+
+
+.contact h1{
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.contact .container{
+    display: flex;
+    width: 95vw;
+    max-width: 1250px;
+    margin: 40px auto;
+}
+
+.contact .container .left{
+    flex: 1;
+}
+
+.contact .container .left .text-input,
+.contact .container .left textarea{
+    display: block;
+    width: 80%;
+    margin:  10px auto;
+    padding: 15px 20px;
+    border-radius: 3px;
+    border: 1px solid #003b65;
+    color: #003b65;
+}
+
+.contact .container .left textarea:focus,
+.contact .container .left .text-input:focus{
+    outline: none;
+}
+
+.contact .container .left button{
+    display: block;
+    width: max-content;
+    margin:  10px auto;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #003b65;
+    color: #003b65;
+}
+
+.contact .container .left button:hover{
+    background-color: #003b65;
+    color: white;
+}
+
+.contact .container .right{
+    flex: 1;
+}
+
+.contact .container .right p{
+    padding: 20px 20px;
+}
+
+.contact .container .right a{
+    width: 45px;
+    height: 45px;
+    padding-top: 10px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 1.3em;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s;
+    color: white;
+}
+
+#message-reponse{
+    text-align: center;
+    width: 100%;
+}
+
+
+.calculator{
+    background-image: url(../img/calculator.jpg);
+    min-height: 600px;
+    width:100%;
+    margin: 0px 0px 40px 0px;
+    color: white;
+    font-family: 'Roboto condensed';
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 0 1000px rgb(4, 4, 39, 0.8) inset;
+}
+
+.calculator .container{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 0px;
+    display: block;
+}
+
+.calculator .container h2, .calculator .container h3{
+    margin:5px 0px;
+}
+
+.calculator .container p{
+    margin: 0px;
+    line-height: 2;
+}
+
+.calculator .container p:first-of-type{
+    color: #daa106;
+}
+
+.calculator h3{
+    font-weight: normal;
+    color: rgb(250, 250, 250, 0.5);
+}
+
+.calculator ::placeholder{
+    color: black;
+}
+
+.calculator input, 
+.calculator select{
+    display: block;
+    margin: 15px 0px;
+    padding: 15px;
+    width: 100%;
+    max-width:400px;
+    border: 0px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.calculator input:focus, .calculator select:focus{
+    outline: none;
+}
+
+
+.calculator .field{
+    display:block;
+    width: 100%;
+    max-width:400px;
+    border: 0px;
+    padding: 20px;
+    border: 1px solid rgb(250, 250, 250, 0.1);
+}
+
+.calculator .field div span{
+    display:block;
+    margin-top: 5px;
+    color: #daa106;
+}
+
+@media only screen and (max-width: 700px){
+    
+    .personal .wrapper{
+        flex-direction: column;
+    }
+    .personal .wrapper .right{
+        margin: 20px 0px;
+    }
+
+    .hero{
+        min-height: 300px;
+    }
+    
+    .contact .container{
+        flex-direction: column;
+    }
+
+    .contact .container .left .text-input,
+    .contact .container .left textarea{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .hero{
+        min-height: 200px;
+    }
+
+    .personal{
+        padding: 15px;
+    }
+}

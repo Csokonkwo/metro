@@ -1,0 +1,493 @@
+main{
+    padding: 110px 5px 100px 10px;
+    width: 75%;
+    float: right;
+    position: relative;
+    min-height: calc(100vh - 0px);
+}
+
+.dash{
+    background: #003b65;
+}
+
+.dash-top{
+    height: 120px;
+    text-align: center;
+    padding: 10px
+}
+
+.dash-top span{
+    display: block;
+    color: white;
+}
+
+.dash-top span a{
+    color: white;
+    font-size: .7em;
+}
+
+.dash-top span:first-of-type{
+    margin: 0px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.dash-middle{
+    padding: 10px 0px;
+}
+
+.dash-middle .container{
+    display: flex;
+    justify-content: center;
+}
+
+.dash-middle .container .box{
+    width: 180px;
+}
+
+.dash-middle .container .box img{
+    width: 50px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    background: #12639d;
+    border-radius: 50%;
+}
+
+.dash-middle .container .box a{
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+.dash-bottom{
+    padding: 10px 10px;
+}
+
+.dash-bottom .container{
+    background: #12639d;
+    border-radius: 20px;
+    height: inherit;
+    padding: 15px;
+    position: relative;
+}
+
+.dash-line{
+    width: 100px;
+    height: 5px;
+    background: white;
+    margin: 0px auto 10px auto;
+    display: block;
+    border-radius: 20px;
+    
+}
+
+.dash-bottom .container .box{
+    display: flex;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 0px 0px 10px 0px;
+    font-size: .9em;
+}
+
+.dash-bottom .container .box:last-of-type{
+    border: 0px;
+}
+
+.dash-bottom .container .box img{
+    flex: 2;
+    max-width: 40px;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    background: #3d94d3;
+    border-radius: 5px;
+}
+
+.dash-bottom .container .box .content{
+    width: 20px;
+    flex: 8;
+    margin: 5px;
+}
+
+.dash-bottom .container .box .content p{
+    margin: 5px 0px;
+}
+
+.dash-bottom .container .box .content span{
+    float: right;
+    font-size: 1.2em;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.flex .right{
+    flex: 3;
+}
+
+.flex .left{
+    flex: 7;
+}
+
+.deposit{
+    margin: 20px 0px 20px 0px;
+}
+
+.deposit .container{
+    display: flex;
+}
+
+.deposit .container h3{
+    margin-left: 10px
+}
+
+.deposit .container .left, .deposit{
+    flex: 1;
+    width: 90%;
+    max-width: 420px;
+}
+
+.deposit .container .right{
+    flex: 1;
+}
+
+.deposit .container .left form{
+    max-width: 300px;
+}
+
+
+.deposit.news .container .left form{
+    width: 100%;
+    max-width: 700px;
+}
+
+.deposit .container .left form input,
+.deposit .container .left form select{
+    display: block;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+input, select:focus{
+    outline: none;
+}
+
+.deposit .container .left form button{
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 1px solid #205AAC;
+    background: #205AAC;
+    color: white;
+    margin: auto;
+    display: block;
+    width: max-content;
+}
+
+.deposit .container .left form p{
+    padding: 0px 10px;
+    font-size: .8em;
+    margin: 0px;
+}
+
+.deposit .container .left form button:hover{
+    background: white;
+    color: #205AAC;
+    transition: 500ms;
+}
+
+.deposit .container .left form p a{
+    border: 1px solid #205aac;
+    padding: 5px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #205aac;
+    color: white;
+}
+
+.deposit .container .left form p input{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.transaction{
+    border: 1px solid #d9d9d9;
+    padding: 13px;
+    margin-top: 10px;
+}
+
+.transaction .content{
+    padding: 15px 10px;
+    box-shadow: 0px 0px 20px 1px #dbdbdb;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.transaction .container{
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style:none;
+}
+
+.transaction .container::-webkit-scrollbar{
+    display: none;
+}
+
+
+.profile{
+    text-transform: capitalize;
+}
+
+.profile .container{
+    display: flex;
+    margin: 10px 0px;
+}
+
+.profile .container .left{
+    flex: 3;
+    padding: 20px;
+    box-shadow: 0px 0px 40px 1px #c6c6c6;
+    border-radius: 5px;
+    margin: 10px;
+    border-top: 3px solid #205AAC;
+}
+
+.profile .container .left img{
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    margin: auto;
+    display: block;
+}
+
+.profile .container .left h2{
+    text-align: center;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+.profile .container .left p{
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 10px 0px;
+    margin: 0px;
+    font-size: .9em;
+}
+
+.profile .container .left p a{
+    float: right;
+}
+
+.profile .container .left p:first-of-type a{
+    background: #205AAC;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 3px;
+    font-size: .8em;
+}
+
+.profile .container .left input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 1px solid #205AAC;
+    margin: 10px 0px;
+    border-radius: 3px;
+}
+
+.profile .container .left button{
+    padding: 10px 20px;
+    background: #205AAC;
+    border: 0px;
+    border-radius: 3px;
+    color: white;
+}
+
+.profile .container .right{
+    flex: 7;
+    font-size: .8em;
+}
+
+.profile .container .right .head{
+    box-shadow: 0px 0px 40px 1px #c6c6c6;
+    border-radius: 5px;
+    margin: 10px 10px 20px 10px;
+    padding: 20px;
+    
+}
+
+.profile .container .right .head a{
+    padding: 10px 20px;
+    background: #205AAC;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 0px 10px 1px #9ecbff;
+    margin: 0px 10px 0px 0px;
+}
+
+.profile .container .right .content{
+    box-shadow: 0px 0px 40px 1px #c6c6c6;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    
+}
+
+.profile .container .right .content p{
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 15px 0px;
+    margin: 0px;
+}
+
+.profile .container .right .content p:first-of-type{
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+
+.profile .container .right p:last-of-type{
+    text-transform: none;
+}
+
+.profile .container .right .content p span{
+    margin: 0px 0px 0px 10px;
+    float: right;
+    color: rgb(0, 0, 0, 0.7)
+}
+
+.profile .container .right .content p input{
+    padding: 5px;
+    border: 1px solid #205aac;
+}
+
+.profile .container .right .content p button{
+    padding: 5px;
+    border: 1px solid #205aac;
+    color: white;
+    border-radius: 3px;
+    background-color: #205aac;
+    cursor: pointer;
+}
+
+#other_detail{
+    display: non;
+}
+
+#other_detail label{
+    color: red;
+    padding: 0px 10px;
+    font-size: .8em;
+    margin: -7px 0px 20px 0px;
+}
+
+#receiverResponse{
+    border: 1px solid gray;
+    margin: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#pin_response{
+    display: none;
+}
+
+#amount_response{
+    display: none;
+}
+
+.btnn{
+    padding: 7px 10px;
+    border: 1px solid #205aac;
+    color: white;
+    border-radius: 3px;
+    background-color: #205aac;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 850px){
+    
+    .profile .container{
+        flex-direction: column;
+    }
+    
+    .profile .container .left,
+    .profile .container .right .head,
+    .profile .container .right .content{
+        margin: 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    main{
+        width: 100%;
+    }
+    
+
+    .flex{
+        flex-direction: column;
+        width: 100%
+    }
+    
+    .flex .left{
+        flex: 1;
+        overflow-x: scroll;
+        margin-top: 20px;
+    }
+    
+    .flex .right{
+        flex: 1;
+        margin: 20px auto;
+    }
+    
+    .deposit .container{
+        flex-direction: column;
+    }
+    
+    .deposit .container .left, 
+    .deposit .container .right{
+        margin: auto;
+        
+    }
+
+    .deposit .right.invest{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .dash-top{
+        height: 80px;
+    }
+
+    .dash-top span:first-of-type{
+        margin: 0px 0px 5px 0px;
+        font-size: 1.5em;
+    }
+    
+    .dash-middle{
+        font-size: .8em;
+    }
+
+    .dash-middle .container .box img{
+        width: 45px;
+    }
+    
+}
+
+@media only screen and (max-width: 348px){
+    .profile .container .right .head a{
+        display: block;
+        margin: 10px auto;
+    }
+}

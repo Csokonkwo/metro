@@ -1,0 +1,6 @@
+[17-Apr-2022 16:28:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/coleqiul/premiertrustgroup.com/includes/dbFunctions.php:16
+Stack trace:
+#0 /home/coleqiul/premiertrustgroup.com/includes/dbFunctions.php(38): executeQuery('INSERT INTO mes...', Array)
+#1 /home/coleqiul/premiertrustgroup.com/includes/sendMessage.php(34): createUser('messages', Array)
+#2 {main}
+  thrown in /home/coleqiul/premiertrustgroup.com/includes/dbFunctions.php on line 16

@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "inter", sans-serif;
+  line-height: 1;
+}
+
+
+/* preloader */
+.preloader{
+    width:100%;
+    height:100%;
+    background-color: white;
+    position: fixed;
+    z-index:9000;
+    top:0;
+    left:0;
+}
+.preloader.inactive{
+    display:none;
+}
+.preloader .loader{
+    margin:auto;
+    display:block;
+    margin-top:40vh;
+    width:120px;
+    height:120px ;
+}
+.preloader .loader img{
+    width:100%;
+    height:100%;
+
+}
+
+
+.search-cancel{
+  position: absolute;
+  top: 15px;
+  z-index: 8882;
+  right: 30px;
+  color: white;
+  cursor: pointer;
+  transform: scale(1, 0);
+}
+
+.search-btn{
+  cursor: pointer;
+}
+
+.search-form{
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 8880;
+  transform: scale(1, 0);
+  transform-origin: top;
+  background-color: #003b65;
+}
+
+.show-search{
+  transform: scale(1, 1);
+}
+
+.search-form input{
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 0px ;
+  background-color: #003b65;
+  color: white;
+}
+
+.search-form input:focus{
+  outline: none;
+}
+
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+header {
+  position: relative;
+  z-index: 5000;
+width: 100%;
+}
+header .topbar {
+  width: 100%;
+  background-color: #003b65;
+  color: white;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+header .topbar * {
+  color: white;
+}
+header .topbar .left {
+  position: relative;
+  left: 0%;
+  display: flex;
+  width: 50%;
+  align-content: flex-start;
+}
+
+header .topbar .right {
+  position: absolute;
+  right: 0;
+  line-height: 2.8;
+}
+header .topbar a {
+  color: #c6ccd1;
+  padding: 20px;
+  text-transform: uppercase;
+  transition: 0.6s;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  height: 100%;
+}
+
+header .topbar a.active {
+  background-color: white;
+  color: #003b65;
+}
+header .topbar a:hover {
+  background-color: #002f51;
+  color: #c6ccd1;
+}
+header nav {
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+}
+header .logo {
+  max-width: 150px;
+  max-height: 50px;
+  margin-left:20px;
+}
+header .logo img {
+  height: 100%;
+  width: 100%;
+}
+header .nav-items {
+  display: flex;
+  width: max-content;
+  position: static;
+  line-height: 2.3;
+  font-size: 16px;
+  font-weight: 500;
+  color: #003b65;
+  margin-left: 15px;
+  list-style: none;
+}
+
+header .nav-items li {
+  position: relative;
+  padding: 10px;
+  color: #003b65;
+  cursor: pointer;
+}
+header .nav-items i {
+  margin-left: 10px;
+}
+
+header .nav-items .dropdown {
+  opacity: 0;
+  z-index: -100;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  transition: 0.2s;
+  max-height: 0;
+  display: flex;
+overflow: hidden;
+}
+header .dropdown a {
+  width: 100%;
+  color: #003b65;
+  font-size: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 200px;
+  transition: 0.5s;
+}
+header .dropdown a:hover {
+  background-color: #eceff1;
+}
+header .nav-items li:hover .dropdown {
+  display: flex;
+  z-index: 1;
+  opacity: 1;
+  max-height: 500px;
+  overflow: hidden;
+}
+header .nav-right {
+  position: absolute;
+  right: 10px;
+  line-height: 2.5;
+}
+header .nav-right i {
+  margin-right: 50px;
+}
+header .nav-right a {
+  background-color: #f0bd2d;
+  color: #003b65;
+  transition: 0.4s;
+  cursor: pointer;
+}
+header .nav-right a:hover {
+  background-color: #003b65;
+  color: #c6ccd1 !important;
+}
+
+.without{
+  color: #003b65;
+}
+
+/* 
+mobile responsive */
+
+@media screen and (max-width: 800px) {
+  html.touch *:hover{
+    all:unset !important;
+  }
+  header .topbar .left {
+    position: relative;
+    left: 0%;
+    display: flex;
+    width: 100%;
+    align-content: flex-start;
+  }
+  header .topbar .left a {
+    padding-left: 10px;
+    padding-left: 10px;
+  }
+
+  header .nav-items {
+    display: none;
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    margin-top: 50px;
+  }
+  header .nav-items.active {
+    display: flex;
+    background-color: #002f51;
+  }
+  header .nav-items li {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    transition: 0.4s;
+    color: white;
+    background-color: #003b65;
+    margin-top: 0.5px;
+    padding-left: 30px;
+    font-size: 16px;
+    transition: 0.8s;
+    font-weight: 400;
+    cursor: pointer;
+
+    position: relative;
+  }
+  header .nav-items li i {
+    color: #f0bd2d;
+    transition: 0.6s;
+    right: 20px;
+    position: absolute;
+    transform: rotate(90deg);
+  }
+  header .nav-items li .dropdown {
+    position: static;
+    max-height: 550px !important;
+    display: none !important ;
+    overflow: hidden;
+    background-color: #002f51;
+    padding: 0;
+    width: 100vw;
+    transition: max-height 0.9s;
+    position: relative;
+    margin-left: -30px;
+    margin-top: 20px;
+  }
+  header .nav-items li:hover .dropdown {
+    display: flex;
+    z-index: 1;
+    opacity: 1;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  header .dropdown a {
+    color: white;
+    margin-top: 0;
+    padding-left: 4px;
+    padding-left: 30px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .without{
+    color: white;
+  }
+
+  header .dropdown a:hover {
+    background-color: #003b65;
+  }
+  header .nav-items li.active .dropdown {
+
+    display: flex !important;
+    opacity: 1;
+    z-index: 1;
+    transition: max-height 0.9s;
+  }
+header .nav-items li.active{
+  color:#f0bd2d;
+}
+  header .nav-items li.active i {
+    transform: rotate(0deg);
+    transition: 0.6s;
+  }
+
+  header .logo {
+    max-height: 45px;
+    max-width: 150px;
+  }
+  header .toggle-btn {
+    margin-right: 20px;
+    line-height: 2.1;
+    font-size: 17px;
+    margin-left:20px;
+    cursor: pointer;
+  }
+  header .topbar a {
+    font-size: 9px;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  header .right {
+    display: none;
+  }
+  header .logo {
+    left: 0;
+  }
+}
